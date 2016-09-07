@@ -6,7 +6,7 @@ I basically re-worked it to use the latest official Golang Docker image but this
 
 ## Usage
 
-Like the base `golang` image
+Like the base `golang` image:
 
 ```bash
 docker run --rm -v "$PWD":/go/src/github.com/yourname/yourrepo -w /go/src/github.com/yourname/yourrepo jhaynie/golang-alpine go build -v
