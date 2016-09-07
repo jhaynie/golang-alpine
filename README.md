@@ -9,9 +9,9 @@ I basically re-worked it to use the latest official Golang Docker image but this
 Like the base `golang` image
 
 ```bash
-docker run --rm -v "$PWD":/go/src/github.com/yourname/yourrepo -w /go/src/github.com/yourname/yourrepo blang/golang-alpine go build -v
+docker run --rm -v "$PWD":/go/src/github.com/yourname/yourrepo -w /go/src/github.com/yourname/yourrepo jhaynie/golang-alpine go build -v
 
-docker run --rm -v "$PWD":/go/bin blang/golang-alpine go get github.com/yourname/yourrepo
+docker run --rm -v "$PWD":/go/bin jhaynie/golang-alpine go get github.com/yourname/yourrepo
 ```
 
 ## License
