@@ -10,6 +10,9 @@ build:
 shell:
 	docker run $(OPTS) --rm --name $(NAME) -i -t $(PORTS) $(VOLUMES) $(ENV) $(NS)/$(REPO) /bin/bash
 
+publish:
+	docker push $(NS)/$(REPO)
+
 rm:
 	docker rm $(OPTS) $(NAME)
 
