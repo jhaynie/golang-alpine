@@ -6,5 +6,5 @@ RUN set -ex \
 		bash \
 		gcc \
 		musl-dev \
-		libgit2 \
+		libgit2-dev \
 		openssl
