@@ -1,4 +1,4 @@
-FROM golang:1.7-alpine
+FROM golang:1.8-alpine
 MAINTAINER Jeff Haynie <jhaynie@gmail.com>
 
 RUN set -ex \
