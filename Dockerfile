@@ -1,6 +1,8 @@
-FROM golang:1.8-alpine
+FROM golang:1.9-alpine
 
-RUN set -ex \
-	&& apk add --no-cache --virtual .build-deps \
-		libgit2-dev gcc \
-		git musl-dev
+RUN apk add --no-cache --virtual .build-deps \
+		alpine-sdk \
+      cmake \
+      sudo \
+		libssh2 libssh2-dev\
+		git 
