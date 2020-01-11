@@ -6,4 +6,5 @@ RUN apk add --no-cache --virtual .build-deps \
 	sudo \
 	libssh2 libssh2-dev\
 	git \
-	dep
+	dep \
+	bash
